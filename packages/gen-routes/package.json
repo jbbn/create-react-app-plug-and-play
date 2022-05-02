@@ -1,0 +1,39 @@
+{
+  "name": "@cra-pnp/gen-routes",
+  "version": "0.1.3",
+  "description": "Create React App plug and play library: for file-based routing. Generate routes by parsing the filenames of a folder.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbbn/create-react-app-plug-and-play.git",
+    "directory": "packages/gen-routes"
+  },
+  "bugs": {
+    "url": "https://github.com/jbbn/create-react-app-plug-and-play/issues"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "main": "./dist/genRoutes.js",
+  "bin": {
+    "gen-routes": "./dist/genRoutes.js"
+  },
+  "scripts": {
+    "dev": "rm -rf dist/ & tsc -p . --watch",
+    "build": "rm -rf dist/ & tsc -p .",
+    "test": "yarn jest"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.0",
+    "@types/lodash": "^4.14.182",
+    "@types/shelljs": "^0.8.11",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  },
+  "author": "João Bueno <joaobbn@gmail.com (https://github.com/jbbn)>"
+}
